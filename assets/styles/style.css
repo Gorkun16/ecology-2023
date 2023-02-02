@@ -1,3 +1,48 @@
 @import url("../fonts/fonts.css");
 @import url(./normalize.css);
 @import url(./scafolding.css);
+
+.header {
+    background-color: #ffffff;
+    padding-top: 33px;
+    padding-bottom: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.left-side {
+    justify-content: flex-start;
+}
+
+.right-side {
+    justify-content: flex-end;
+}
+
+
+.navigation {
+    flex-grow: 1;
+  }
+
+.navigation-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4F4F4F;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.img {
+    width: 244px;
+    height: 45px;
+    margin-bottom: 60px;
+}
+
+.navigation {
+    margin-bottom: 46px;
+}
