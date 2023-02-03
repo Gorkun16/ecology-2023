@@ -22,9 +22,12 @@
 .icons-header {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .phone {
+    display: flex;
+    align-items: center;
     margin-right: 60px;
 }
 
@@ -57,8 +60,8 @@
     margin-right: 0px;
 }
 
-.nav-link-with-arrow::after {
-    content: url(../assets/images/arrow-down.svg);
+.navigation-link-with-arrow::after {
+    content: url(../images/arrow-down.svg);
     display: inline-block;
     width: 8.75px;
     height: 4.38px;
@@ -76,18 +79,19 @@ input::-webkit-input-placeholder {
     font-size: 18px;
     line-height: 22px;
     color: #828282;
+    text-align: left;
 }
 
 form {
     width: 345px;
     margin-top: 48px;
     background-color: #F2F2F2;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
 }
 
 input {
     background-color: transparent;
-    border: 1px solid #BDBDBD;
-    border-radius: 10px;
     padding-left: 20px;
     height: 54px;
 }
@@ -186,12 +190,30 @@ footer {
     height: 255px;
 }
 
-footer a {
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.section-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.link-footer {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
     text-decoration: none;
+    margin-right: 47px;
+}
+
+.link-footer-last {
+    margin-right: 0px;
 }
 
 .tel-icon-footer {
@@ -199,6 +221,8 @@ footer a {
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+}
 
-
+.icon-social-footer {
+    margin-right: 20px;
 }

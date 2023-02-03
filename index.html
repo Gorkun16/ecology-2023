@@ -11,50 +11,48 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body class="body">
-    <section>
-        <header class="header">
-            <div class="wrapper">
-                <div class="header-content">
-                    <div class="header-section">
-                        <div class="logo">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <div class="header-section">
+                    <div class="logo">
+                        <a href="">
+                            <img src="./assets/images/logo.png" alt="логотип" width="244" height="45" class="img">
+                        </a>
+                    </div>
+                    <nav class="navigation">
+                        <a href="" class="navigation-link navigation-link-with-arrow">Каталог</a>
+                        <a href="" class="navigation-link">О проекте</a>
+                        <a href="" class="navigation-link">Птицы</a>
+                        <a href="" class="navigation-link navigation-link-last">Пожертвования</a>
+                    </nav>
+                </div>
+                <div class="header-section">
+                    <div class="icons-header">
+                        <div class="phone">
+                            <a href="tel:89209994350" class="tel"> <img src="./assets/images/phone.svg" class="tel-icon">8 920 999 43 50</a>
+                        </div>
+                        <div class="shop">
                             <a href="">
-                                <img src="./assets/images/logo.png" alt="логотип" width="244" height="45" class="img">
+                                <img src="./assets/images/shop.svg" alt="корзина" width="35" height="38">
                             </a>
                         </div>
-                        <nav class="navigation">
-                            <a href="" class="navigation-link nav-link-with-arrow">Каталог</a>
-                            <a href="" class="navigation-link">О проекте</a>
-                            <a href="" class="navigation-link">Птицы</a>
-                            <a href="" class="navigation-link navigation-link-last">Пожертвования</a>
-                        </nav>
-                    </div>
-                    <div class="header-section">
-                        <div class="icons-header">
-                            <div class="phone">
-                                <a href="tel:89209994350" class="tel"> <img src="./assets/images/phone.svg" class="tel-icon">8 920 999 43 50</a>
-                            </div>
-                            <div class="shop">
-                                <a href="">
-                                    <img src="./assets/images/shop.svg" alt="корзина" width="35" height="38">
-                                </a>
-                            </div>
-                            <div class="account">
-                                <a href="">
-                                    <img src="./assets/images/account.svg" alt="аккаунт" width="30" height="30">
-                                </a>
-                            </div>
+                        <div class="account">
+                            <a href="">
+                                <img src="./assets/images/account.svg" alt="аккаунт" width="30" height="30">
+                            </a>
                         </div>
-                        <form class="search"> 
-                            <input type="search" name="text" class="search" placeholder="Поиск">
-                            <button type="submit">
-                                <img src="./assets/images/Search.svg">
-                            </button>
-                        </form>
                     </div>
+                    <form class="search"> 
+                        <input type="search" name="text" class="search" placeholder="Поиск">
+                        <button type="submit" class="search-icon">
+                            <img src="./assets/images/Search.svg">
+                        </button>
+                    </form>
                 </div>
             </div>
-        </header>
-    </section>
+        </div>
+    </header>
     <section class="content">
         <div class="wrapper">
             <div class="some-content">
@@ -143,24 +141,34 @@
     </section>
     <footer>
         <div class="wrapper">
-            <div class="header-content">
-                <div class="header-section">
+            <div class="footer-content">
+                <div class="section-footer">
                     <a href="" class="link-footer">Оплата</a>
                     <a href="" class="link-footer link-footer-last">Доставка</a>
                 </div>
-                <div class="header-section">
-                    <a href="">
+                <div class="section-footer">
+                    <a href="" class="icon-social-footer">
                         <img src="./assets/images/vk.svg" alt="вконтакте" width="25" height="25">
                     </a>
                     <a href="">
                         <img src="./assets/images/insta.svg" alt="инста" width="25" height="25">
                     </a>
                 </div>
-                <div class="header-section">
-                    <a href="tel:89209994350" class="tel"> <img src="./assets/images/phone.svg" class="link-footer">8 920 999 43 50</a>
-                </div>
-        
-        
+                <div class="section-footer">
+                    <a href="tel:89209994350" class="link-footer link-footer-last"> <img src="./assets/images/phone-white.svg" class="tel-icon">8 920 999 43 50</a>
+                </div> 
     </footer>
+    <div class="layer layer-opened">
+        <form class="form-pop-up">
+            <button class="close"></button>
+            <h2 class="title-form">We would like to help you</h2>
+            <input type="text" name="name" placeholder="Name">
+            <textarea rows="3" name="comment" placeholder="Message"></textarea>
+            <p class="text-form">How to answer you?</p>
+            <input type="tel" name="phone" placeholder="Phone number">
+            <input type="email" name="email" placeholder="Email">
+            <button class="send">Send message</button>
+        </form>
+    </div>
 </body>
 </html>
