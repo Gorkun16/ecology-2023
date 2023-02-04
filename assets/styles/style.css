@@ -1,6 +1,7 @@
 @import url("../fonts/fonts.css");
 @import url(./normalize.css);
 @import url(./scafolding.css);
+@import url(./dialog.css);
 
 .header {
     background-color: #ffffff;
