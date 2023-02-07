@@ -40,7 +40,7 @@ body {
 
 #menu li:hover > a {
     color: #fff;
-    background: #009eff;
+    background: #009aff;
 }
 
 #menu ul {
@@ -50,20 +50,18 @@ body {
     top: 86px;
     left: 0;
     z-index: 1;
-    background: #009aff;
-    border: #0084ef 1px solid;
+    background: #009eff;
 }
 
 #menu li:hover > ul {
     opacity: 1;
-    background: #00a9ff;
     visibility: visible;
     margin: 0;
 }
 
 #menu ul ul {
     top: 0;
-    left: 272px;
+    left: 330px;
     margin: 0 0 0 20px;
 }
 
@@ -74,13 +72,9 @@ body {
 }
 
 #menu ul a {
-    padding: 10px;
+    padding: 35px 40px;
     width: 250px;
     display: block;
     white-space: nowrap;
     float: none;
-}
-
-.product {
-    margin: 25px 40px;
 }
