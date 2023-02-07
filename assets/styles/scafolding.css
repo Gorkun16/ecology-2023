@@ -12,3 +12,18 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul li {
+    list-style-type: none;
+}

@@ -12,6 +12,7 @@
 .header-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-section {
@@ -20,39 +21,20 @@
     flex-direction: column;
 }
 
-.icons-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.img {
+    width: 244px;
+    height: 45px;
+    margin-bottom: 60px;
 }
 
-.phone {
-    display: flex;
-    align-items: center;
-    margin-right: 60px;
-}
-
-.shop {
-    margin-right: 15px;
-}
-
-.tel {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.tel-icon {
-    margin-right: 12px;
+.navigation {
+    margin-bottom: 46px;
 }
 
 .navigation-link {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    text-decoration: none;
     margin-right: 40px;
     color: #4F4F4F;
 }
@@ -69,10 +51,33 @@
     margin-left: 4px;
 }
 
-.img {
-    width: 244px;
-    height: 45px;
-    margin-bottom: 60px;
+.icons-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.shop {
+    margin-right: 15px;
+}
+
+.tel {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    vertical-align: baseline;
+}
+
+.tel-icon {
+    margin-right: 12px;
 }
 
 input::-webkit-input-placeholder {
@@ -101,10 +106,6 @@ input, button {
     border: none;
     outline: none;
     background: transparent;
-}
-
-.navigation {
-    margin-bottom: 46px;
 }
 
 .content {
