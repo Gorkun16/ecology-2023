@@ -157,7 +157,7 @@ ul.breadcrumb li a::after {
 
 .content {
     padding-top: 75px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .some-content {
@@ -246,12 +246,6 @@ ul.breadcrumb li a::after {
     border: 1px solid transparent;
 }
 
-.container-active {
-    border: 1px solid #3ECF5E;
-    border-radius: 5px;
-    background: #FFFFFF;
-}
-
 input:checked + .container {
     border: 1px solid #3ECF5E;
     border-radius: 5px;
@@ -274,6 +268,44 @@ input:checked + .container {
     align-items: center;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #828282;
+    margin-top: 50px;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+.back-pagination-left::before {
+    content: url(../images/arrow-pagination-left.svg);
+    margin-right: 10px;
+    display: inline-block;
+    width: 10.67px;
+    height: 6px;
+}
+
+.back-pagination-right::after {
+    content: url(../images/arrow-pagination-right.svg);
+    margin-left: 10px;
+}
+
+.pagination a.active-pag {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #219653;
+    }
+    
+.pagination a:hover:not(.active-pag) {
+    color: #333333;
+}
 footer {
     background: #333333;
     height: 255px;
@@ -303,6 +335,8 @@ footer {
 
 .link-footer-last {
     margin-right: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .tel-icon-footer {
