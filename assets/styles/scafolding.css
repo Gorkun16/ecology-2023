@@ -18,12 +18,24 @@ a {
 }
 
 button {
-    display: block;
+    display: inline-block;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 0;
 }
 
 ul li {
     list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
 }
