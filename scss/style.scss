@@ -1,115 +1,10 @@
 @import url("../fonts/fonts.css");
-@import url(./normalize.css);
-@import url(./scafolding.css);
-@import url(./dialog.css);
-
-.header {
-    background-color: #ffffff;
-    padding-top: 33px;
-    padding-bottom: 30px;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.header-section-1 .header-section-2 {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.header-section-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.img {
-    width: 244px;
-    height: 45px;
-    margin-bottom: 60px;
-}
-
-.navigation-link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    margin-right: 40px;
-    color: #4F4F4F;
-}
-
-.navigation-link-last {
-    margin-right: 0px;
-}
-
-.navigation-link-with-arrow::after {
-    content: url(../images/arrow-down.svg);
-    display: inline-block;
-    width: 8.75px;
-    height: 4.38px;
-    margin-left: 4px;
-}
-
-.header-section-item {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.tel {
-    color: #000000;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    margin-right: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.tel-icon {
-    margin-right: 12px;
-}
-
-.shop {
-    margin-right: 15px;
-}
-
-.search {
-    width: 345px;
-    margin-top: 48px;
-    background-color: #F2F2F2;
-    border: 1px solid #BDBDBD;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.search-icon {
-    margin-right: 22px;
-}
-
-input::-webkit-input-placeholder {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #828282;
-    text-align: left;
-}
-
-input {
-    background-color: transparent;
-    padding-left: 20px;
-    height: 54px;
-}
-
-input, button {
-    border: none;
-    outline: none;
-    background: transparent;
-}
+@import "./normalize";
+@import "./scafolding";
+@import "./header";
+@import "./dialog";
+@import "./shop-page";
+@import "./footer";
 
 .breadcrumb {
     margin-bottom: 30px;
@@ -148,7 +43,7 @@ ul.breadcrumb li a::after {
 }
 
 .back::before {
-    content: url(../images/back-arrow.svg);
+    content: url(../assets/images/back-arrow.svg);
     display: inline-block;
     width: 10.5px;
     height: 5.26px;
@@ -305,47 +200,4 @@ input:checked + .container {
     
 .pagination a:hover:not(.active-pag) {
     color: #333333;
-}
-footer {
-    background: #333333;
-    height: 255px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 130px;
-}
-
-.section-footer {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-.link-footer {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-right: 47px;
-}
-
-.link-footer-last {
-    margin-right: 0px;
-    display: flex;
-    align-items: center;
-}
-
-.tel-icon-footer {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.icon-social-footer {
-    margin-right: 20px;
 }
