@@ -1,0 +1,26 @@
+.picker {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    &__value {
+        display: inline-block;
+        padding: 4px 12px;
+        height: 30px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4F4F4F;
+        border: 1px solid transparent;
+    }
+
+    & input {
+        display: none;
+    }
+
+    & input:checked + .picker__value {
+        border-color: #3ECF5E;
+        border-radius: 5px;
+        background: #FFFFFF;
+    }
+}

@@ -1,0 +1,25 @@
+.breadcrumb {
+    margin-bottom: 30px;
+
+    &__item {
+        display: inline;
+        font-weight: 500;
+        font-size: 18px;
+        color: #BDBDBD;
+        line-height: 21px;
+
+        &:not(:last-child) {
+            margin-right: 14px;
+
+            &::after {
+                display: inline-block;
+                content: '';
+                width: 6px;
+                height: 6px;
+                background: #BDBDBD;
+                border-radius: 100%;
+                margin-left: 15px;
+            }
+        }
+    }
+}

@@ -13,30 +13,30 @@
 <body class="body">
     <header class="header">
         <div class="wrapper">
-            <div class="header-content">
-                <div class="header-section-1">
+            <div class="header__content">
+                <div class="header__section-1">
                     <a href="">
-                        <img src="./assets/images/logo.png" alt="логотип" width="244" height="45" class="img">
+                        <img src="./assets/images/logo.png" alt="логотип" width="244" height="45" class="header__logo">
                     </a>
-                    <nav class="navigation">
-                        <a href="" class="navigation-link navigation-link-with-arrow">Каталог</a>
-                        <a href="" class="navigation-link">О проекте</a>
-                        <a href="" class="navigation-link">Птицы</a>
-                        <a href="" class="navigation-link navigation-link-last">Пожертвования</a>
+                    <nav class="main-nav">
+                        <a href="" class="main-nav__item main-nav__item--dropdown">Каталог</a>
+                        <a href="" class="main-nav__item">О проекте</a>
+                        <a href="" class="main-nav__item">Птицы</a>
+                        <a href="" class="main-nav__item">Пожертвования</a>
                     </nav>
                 </div>
-                <div class="header-section-2">
+                <div class="header__section-2">
                     <div>
                         <ul>
-                            <li class="header-section-item">
-                                <a href="tel:89209994350" class="tel"> <img src="./assets/images/phone.svg" alt="телефон" class="tel-icon">8 920 999 43 50</a>
+                            <li class="header__item">
+                                <a href="tel:89209994350" class="header__phone"> <img src="./assets/images/phone.svg" alt="телефон" class="header__phone-icon">8 920 999 43 50</a>
                             </li>
-                            <li class="header-section-item shop">
+                            <li class="header__item">
                                 <a href="">
                                     <img src="./assets/images/shop.svg" alt="корзина" width="35" height="38">
                                 </a>
                             </li>
-                            <li class="header-section-item">
+                            <li class="header__item">
                                 <a href="">
                                     <img src="./assets/images/account.svg" alt="аккаунт" width="30" height="30">
                                 </a>
@@ -56,245 +56,247 @@
     <section class="content">
         <div class="wrapper">
             <ul class="breadcrumb">
-                <li><a href="#">Каталог</a></li>
-                <li>Готовые миксы</li>
+                <a href="#" class="breadcrumb__item">Каталог</a>
+                <a href="" class="breadcrumb__item">Готовые миксы</a>
             </ul>
-            <a href="#"><span class="back">Назад</span></a>
+            <div class="page-list">
+                <a href="#" class="page-list__item page-list__item--prev">Назад</a>
+            </div>
             <div class="some-content">
-                <div class="some-content-item">
-                    <img src="./assets/images/item.png" alt="корм для птиц" class="img-item" width="275" height="227">
-                    <p class="description">PADOVAN OVOMIX GOLD ROSSO</p>
-                    <p class="small-description">Корм для птиц</p>
-                    <p class="price">1000 руб.</p>
-                    <div class="radio-all">
+                <div class="card">
+                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
+                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
+                    <p class="card__details">Корм для птиц</p>
+                    <p class="card__price">1000 руб.</p>
+                    <div class="picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
-                            <span class="container">200 г</span>
+                            <span class="picker__value">200 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="400 г">
-                            <span class="container">400 г</span>
+                            <span class="picker__value">400 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="800 г">
-                            <span class="container">800 г</span>
+                            <span class="picker__value">800 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="1000 г">
-                            <span class="container">1 кг</span>
+                            <span class="picker__value">1 кг</span>
                         </label>
                     </div>
-                    <div class="buttons-buy">
+                    <div class="card__info">
                         <button class="button-green">Подробнее</button>
                         <button class="button-small">
                             <img src="./assets/images/buy.svg" alt="корзина купить">
                         </button>
                     </div>
                 </div>
-                <div class="some-content-item">
-                    <img src="./assets/images/item.png" alt="корм для птиц" class="img-item" width="275" height="227">
-                    <p class="description">PADOVAN OVOMIX GOLD ROSSO</p>
-                    <p class="small-description">Корм для птиц</p>
-                    <p class="price">1000 руб.</p>
-                    <div class="radio-all">
+                <div class="card">
+                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
+                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
+                    <p class="card__details">Корм для птиц</p>
+                    <p class="card__price">1000 руб.</p>
+                    <div class="picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
-                            <span class="container">200 г</span>
+                            <span class="picker__value">200 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="400 г">
-                            <span class="container">400 г</span>
+                            <span class="picker__value">400 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="800 г">
-                            <span class="container">800 г</span>
+                            <span class="picker__value">800 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="1000 г">
-                            <span class="container">1 кг</span>
+                            <span class="picker__value">1 кг</span>
                         </label>
                     </div>
-                    <div class="buttons-buy">
+                    <div class="card__info">
                         <button class="button-green">Подробнее</button>
                         <button class="button-small">
                             <img src="./assets/images/buy.svg" alt="корзина купить">
                         </button>
                     </div>
                 </div>
-                <div class="some-content-item">
-                    <img src="./assets/images/item.png" alt="корм для птиц" class="img-item" width="275" height="227">
-                    <p class="description">PADOVAN OVOMIX GOLD ROSSO</p>
-                    <p class="small-description">Корм для птиц</p>
-                    <p class="price">1000 руб.</p>
-                    <div class="radio-all">
+                <div class="card">
+                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
+                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
+                    <p class="card__details">Корм для птиц</p>
+                    <p class="card__price">1000 руб.</p>
+                    <div class="picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
-                            <span class="container">200 г</span>
+                            <span class="picker__value">200 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="400 г">
-                            <span class="container">400 г</span>
+                            <span class="picker__value">400 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="800 г">
-                            <span class="container">800 г</span>
+                            <span class="picker__value">800 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="1000 г">
-                            <span class="container">1 кг</span>
+                            <span class="picker__value">1 кг</span>
                         </label>
                     </div>
-                    <div class="buttons-buy">
+                    <div class="card__info">
                         <button class="button-green">Подробнее</button>
                         <button class="button-small">
                             <img src="./assets/images/buy.svg" alt="корзина купить">
                         </button>
                     </div>
                 </div>
-                <div class="some-content-item">
-                    <img src="./assets/images/item.png" alt="корм для птиц" class="img-item" width="275" height="227">
-                    <p class="description">PADOVAN OVOMIX GOLD ROSSO</p>
-                    <p class="small-description">Корм для птиц</p>
-                    <p class="price">1000 руб.</p>
-                    <div class="radio-all">
+                <div class="card">
+                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
+                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
+                    <p class="card__details">Корм для птиц</p>
+                    <p class="card__price">1000 руб.</p>
+                    <div class="picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
-                            <span class="container">200 г</span>
+                            <span class="picker__value">200 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="400 г">
-                            <span class="container">400 г</span>
+                            <span class="picker__value">400 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="800 г">
-                            <span class="container">800 г</span>
+                            <span class="picker__value">800 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="1000 г">
-                            <span class="container">1 кг</span>
+                            <span class="picker__value">1 кг</span>
                         </label>
                     </div>
-                    <div class="buttons-buy">
+                    <div class="card__info">
                         <button class="button-green">Подробнее</button>
                         <button class="button-small">
                             <img src="./assets/images/buy.svg" alt="корзина купить">
                         </button>
                     </div>
                 </div>
-                <div class="some-content-item">
-                    <img src="./assets/images/item.png" alt="корм для птиц" class="img-item" width="275" height="227">
-                    <p class="description">PADOVAN OVOMIX GOLD ROSSO</p>
-                    <p class="small-description">Корм для птиц</p>
-                    <p class="price">1000 руб.</p>
-                    <div class="radio-all">
+                <div class="card">
+                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
+                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
+                    <p class="card__details">Корм для птиц</p>
+                    <p class="card__price">1000 руб.</p>
+                    <div class="picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
-                            <span class="container">200 г</span>
+                            <span class="picker__value">200 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="400 г">
-                            <span class="container">400 г</span>
+                            <span class="picker__value">400 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="800 г">
-                            <span class="container">800 г</span>
+                            <span class="picker__value">800 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="1000 г">
-                            <span class="container">1 кг</span>
+                            <span class="picker__value">1 кг</span>
                         </label>
                     </div>
-                    <div class="buttons-buy">
+                    <div class="card__info">
                         <button class="button-green">Подробнее</button>
                         <button class="button-small">
                             <img src="./assets/images/buy.svg" alt="корзина купить">
                         </button>
                     </div>
                 </div>
-                <div class="some-content-item">
-                    <img src="./assets/images/item.png" alt="корм для птиц" class="img-item" width="275" height="227">
-                    <p class="description">PADOVAN OVOMIX GOLD ROSSO</p>
-                    <p class="small-description">Корм для птиц</p>
-                    <p class="price">1000 руб.</p>
-                    <div class="radio-all">
+                <div class="card">
+                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
+                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
+                    <p class="card__details">Корм для птиц</p>
+                    <p class="card__price">1000 руб.</p>
+                    <div class="picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
-                            <span class="container">200 г</span>
+                            <span class="picker__value">200 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="400 г">
-                            <span class="container">400 г</span>
+                            <span class="picker__value">400 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="800 г">
-                            <span class="container">800 г</span>
+                            <span class="picker__value">800 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="1000 г">
-                            <span class="container">1 кг</span>
+                            <span class="picker__value">1 кг</span>
                         </label>
                     </div>
-                    <div class="buttons-buy">
+                    <div class="card__info">
                         <button class="button-green">Подробнее</button>
                         <button class="button-small">
                             <img src="./assets/images/buy.svg" alt="корзина купить">
                         </button>
                     </div>
                 </div>
-                <div class="some-content-item">
-                    <img src="./assets/images/item.png" alt="корм для птиц" class="img-item" width="275" height="227">
-                    <p class="description">PADOVAN OVOMIX GOLD ROSSO</p>
-                    <p class="small-description">Корм для птиц</p>
-                    <p class="price">1000 руб.</p>
-                    <div class="radio-all">
+                <div class="card">
+                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
+                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
+                    <p class="card__details">Корм для птиц</p>
+                    <p class="card__price">1000 руб.</p>
+                    <div class="picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
-                            <span class="container">200 г</span>
+                            <span class="picker__value">200 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="400 г">
-                            <span class="container">400 г</span>
+                            <span class="picker__value">400 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="800 г">
-                            <span class="container">800 г</span>
+                            <span class="picker__value">800 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="1000 г">
-                            <span class="container">1 кг</span>
+                            <span class="picker__value">1 кг</span>
                         </label>
                     </div>
-                    <div class="buttons-buy">
+                    <div class="card__info">
                         <button class="button-green">Подробнее</button>
                         <button class="button-small">
                             <img src="./assets/images/buy.svg" alt="корзина купить">
                         </button>
                     </div>
                 </div>
-                <div class="some-content-item">
-                    <img src="./assets/images/item.png" alt="корм для птиц" class="img-item" width="275" height="227">
-                    <p class="description">PADOVAN OVOMIX GOLD ROSSO</p>
-                    <p class="small-description">Корм для птиц</p>
-                    <p class="price">1000 руб.</p>
-                    <div class="radio-all">
+                <div class="card">
+                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
+                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
+                    <p class="card__details">Корм для птиц</p>
+                    <p class="card__price">1000 руб.</p>
+                    <div class="picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
-                            <span class="container">200 г</span>
+                            <span class="picker__value">200 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="400 г">
-                            <span class="container">400 г</span>
+                            <span class="picker__value">400 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="800 г">
-                            <span class="container">800 г</span>
+                            <span class="picker__value">800 г</span>
                         </label>
                         <label>
                             <input type="radio" name="weight" value="1000 г">
-                            <span class="container">1 кг</span>
+                            <span class="picker__value">1 кг</span>
                         </label>
                     </div>
-                    <div class="buttons-buy">
+                    <div class="card__info">
                         <button class="button-green">Подробнее</button>
                         <button class="button-small">
                             <img src="./assets/images/buy.svg" alt="корзина купить">
