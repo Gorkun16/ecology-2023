@@ -15,9 +15,7 @@
         <div class="wrapper">
             <div class="header__content">
                 <div class="header__section-1">
-                    <a href="">
-                        <img src="./assets/images/logo.png" alt="логотип" width="244" height="45" class="header__logo">
-                    </a>
+                    <a href=""><img src="./assets/images/logo.png" alt="логотип" width="244" height="45" class="header__logo"></a>
                     <nav class="main-nav">
                         <a href="" class="main-nav__item main-nav__item--dropdown">Каталог</a>
                         <a href="" class="main-nav__item">О проекте</a>
@@ -43,17 +41,16 @@
                             </li>
                         </ul>
                     </div>
-                    <form class="search"> 
-                        <input type="search" name="text" placeholder="Поиск">
-                        <button type="submit" class="search-icon">
-                            <img src="./assets/images/Search.svg" alt="поиск">
-                        </button>
+                    <form class="form">
+                        <div class="input input--image input--image-search">
+                            <input type="search" name="text" placeholder="Поиск" class="input__item input__item--header form__input">
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </header>
-    <section class="content">
+    <main class="content">
         <div class="wrapper">
             <ul class="breadcrumb">
                 <a href="#" class="breadcrumb__item">Каталог</a>
@@ -62,13 +59,45 @@
             <div class="page-list">
                 <a href="#" class="page-list__item page-list__item--prev">Назад</a>
             </div>
-            <div class="some-content">
-                <div class="card">
+            <div class="list">
+                <div class="list__item card">
                     <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
                     <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
                     <p class="card__details">Корм для птиц</p>
                     <p class="card__price">1000 руб.</p>
-                    <div class="picker">
+                    <form action="https://fom.in.ua/echo">
+                        <div class="picker card__picker">
+                            <label>
+                                <input type="radio" name="weight" value="200 г">
+                                <span class="picker__value">200 г</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="weight" value="400 г">
+                                <span class="picker__value">400 г</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="weight" value="800 г">
+                                <span class="picker__value">800 г</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="weight" value="1000 г">
+                                <span class="picker__value">1 кг</span>
+                            </label>
+                        </div>
+                    </form>
+                    <div class="card__info">
+                        <button class="button-green">Подробнее</button>
+                        <button class="button-small">
+                            <img src="./assets/images/buy.svg" alt="корзина купить">
+                        </button>
+                    </div>
+                </div>
+                <div class="list__item card">
+                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
+                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
+                    <p class="card__details">Корм для птиц</p>
+                    <p class="card__price">1000 руб.</p>
+                    <div class="picker card__picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
                             <span class="picker__value">200 г</span>
@@ -93,12 +122,12 @@
                         </button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="list__item card">
                     <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
                     <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
                     <p class="card__details">Корм для птиц</p>
                     <p class="card__price">1000 руб.</p>
-                    <div class="picker">
+                    <div class="picker card__picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
                             <span class="picker__value">200 г</span>
@@ -123,12 +152,12 @@
                         </button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="list__item card">
                     <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
                     <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
                     <p class="card__details">Корм для птиц</p>
                     <p class="card__price">1000 руб.</p>
-                    <div class="picker">
+                    <div class="picker card__picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
                             <span class="picker__value">200 г</span>
@@ -153,12 +182,12 @@
                         </button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="list__item card">
                     <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
                     <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
                     <p class="card__details">Корм для птиц</p>
                     <p class="card__price">1000 руб.</p>
-                    <div class="picker">
+                    <div class="picker card__picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
                             <span class="picker__value">200 г</span>
@@ -183,12 +212,12 @@
                         </button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="list__item card">
                     <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
                     <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
                     <p class="card__details">Корм для птиц</p>
                     <p class="card__price">1000 руб.</p>
-                    <div class="picker">
+                    <div class="picker card__picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
                             <span class="picker__value">200 г</span>
@@ -213,12 +242,12 @@
                         </button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="list__item card">
                     <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
                     <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
                     <p class="card__details">Корм для птиц</p>
                     <p class="card__price">1000 руб.</p>
-                    <div class="picker">
+                    <div class="picker card__picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
                             <span class="picker__value">200 г</span>
@@ -243,42 +272,12 @@
                         </button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="list__item card">
                     <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
                     <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
                     <p class="card__details">Корм для птиц</p>
                     <p class="card__price">1000 руб.</p>
-                    <div class="picker">
-                        <label>
-                            <input type="radio" name="weight" value="200 г">
-                            <span class="picker__value">200 г</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="weight" value="400 г">
-                            <span class="picker__value">400 г</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="weight" value="800 г">
-                            <span class="picker__value">800 г</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="weight" value="1000 г">
-                            <span class="picker__value">1 кг</span>
-                        </label>
-                    </div>
-                    <div class="card__info">
-                        <button class="button-green">Подробнее</button>
-                        <button class="button-small">
-                            <img src="./assets/images/buy.svg" alt="корзина купить">
-                        </button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/item.png" alt="корм для птиц" class="card__image" width="275" height="227">
-                    <p class="card__title">PADOVAN OVOMIX GOLD ROSSO</p>
-                    <p class="card__details">Корм для птиц</p>
-                    <p class="card__price">1000 руб.</p>
-                    <div class="picker">
+                    <div class="picker card__picker">
                         <label>
                             <input type="radio" name="weight" value="200 г">
                             <span class="picker__value">200 г</span>
@@ -312,7 +311,7 @@
                 <a href="#"><span class="back-pagination-right"></span></a>
               </div>
         </div>
-    </section>
+    </main>
     <footer>
         <div class="wrapper">
             <div class="footer-content">

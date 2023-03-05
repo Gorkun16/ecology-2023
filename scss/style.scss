@@ -10,6 +10,8 @@
 @import "./button";
 @import "./picker";
 @import "./card";
+@import "./input";
+@import "./form";
 
 .page-list {
     display: flex;
@@ -37,18 +39,22 @@
     padding-bottom: 100px;
 }
 
-.some-content {
-    font-size: 0;
+.list {
     display: flex;
     column-gap: 20px;
     row-gap: 46px;
     flex-wrap: wrap;
     margin-top: 44px;
+
+    &__item {
+        width: 315px;
+    }
 }
 
 .pagination {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .pagination a {
@@ -56,13 +62,12 @@
     font-size: 18px;
     line-height: 21px;
     color: #828282;
-    margin-top: 50px;
     padding: 0px 20px;
     text-decoration: none;
 }
 
 .back-pagination-left::before {
-    content: url(../images/arrow-pagination-left.svg);
+    content: url('../assets/images/arrow-pagination-left.svg');
     margin-right: 10px;
     display: inline-block;
     width: 10.67px;
@@ -70,14 +75,12 @@
 }
 
 .back-pagination-right::after {
-    content: url(../images/arrow-pagination-right.svg);
+    content: url('../assets/images/arrow-pagination-right.svg');
     margin-left: 10px;
 }
 
 .pagination a.active-pag {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
     color: #219653;
     }
     
